@@ -20,6 +20,7 @@ import android.widget.TextView;
 public class threeFragment extends Fragment {
     private TextView tv;
     private Button btn_duanxin;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class threeFragment extends Fragment {
                 intentSMS.setAction(Intent.ACTION_SENDTO);
                 intentSMS.setData(Uri.parse("smsto:13141403763"));
                 intentSMS.putExtra("sms_body","");
+                System.out.println("");
                 startActivity(intentSMS);
             }
         });
