@@ -22,6 +22,7 @@ public class oneFragment extends Fragment {
     private TextView tv;
     private Button btn_bohao;
     private EditText  number;
+    //拨号
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
